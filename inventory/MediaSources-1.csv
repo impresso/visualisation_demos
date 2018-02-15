@@ -1,0 +1,748 @@
+PartnerID,Title,Subtitle,Predecessor,Lang,YearStart,YearEnd,DigitizationStatus
+SNL,Le Bien public,,Absorption of Chroniqueur,fr,1879,1888,done
+SNL,Le Confédéré de Fribourg,,"Titre 1853-1865: Confédéré : journal démocratique fribourgeois, Titre 1866-1870: Confédéré de Fribourg : journal de la démocratie radicale suisse, Titre 1871-1885: Confédéré : journal des radicaux fribourgeois, Titre 1886-1907: Confédéré de Fribourg : journal démocratique suisse",fr,1848,1907,done
+SNL,Le Courrier fribourgeois,,,fr,1830,1830,done
+SNL,Le Chroniqueur,"feuille politique, scientifique et littéraire, Variante de titre 1855-1857: Chroniqueur - Gazette de Fribourg, Titre 1858-1863: Chroniqueur de Fribourg, Titre 1865-1881: Chroniqueur suisse",Absorption of Gazette de Fribourg,fr,1854,1881,done
+SNL,Freiburger Nachrichten,,Freiburger Zeitung until 16.01.1904,de,1865,2018,partial
+SNL,La Gruyère,"journal indépendant, politique et agricole",,fr,1882,2018,partial
+SNL,Journal du canton de Fribourg,,,fr,1830,1833,done
+SNL,Der Landbote des freiburgischen Seebezirks,,,de,1909,1914,done
+SNL,La Liberté,quotidien romand édité à Fribourg,,fr,1871,2018,partial
+SNL,Le Narrateur fribourgeois,Journal politique et littéraire,,fr,1840,1855,done
+SNL,La Tribune de Fribourg,"Organe littéraire, scientifique et économique",,fr,1905,2018,done
+SNL,Le Véridique,"Journal politique, religieux, scientifique et littéraire",,fr,1831,1833,done
+SNL,Il Grigione italiano,settimanale di pubblicazione della Valle di Poschiavo,,it,1852,2018,partial
+SNL,Fögl d’Engiadina,"Organ uffiziel per las vschinaunchas da Samedan, Silvaplauna, Zernez, Tschlin, Ftan, Sent, Scuol, Garda e Bever",,rm,1887,1939,done
+SNL,Graubündner General-Anzeiger,Schweizerische Wochenrundschau,,de,1905,1930,done
+SNL,Bündner Landbote,,,de,1846,1847,done
+SNL,Bündner Nachrichten,,,de,1885,1892,done
+SNL,Der Liberale Alpenbote,tägliche Bündner Zeitung,,de,1848,1860,done
+SNL,Der Morgenstern,eine Volkszeitung für Graubünden,,de,1842,1843,done
+SNL,Der Volksfreund,,,de,1879,1885,done
+SNL,"La Sentinelle, Le Peuple La Sentinelle",journal économique et social : organe du Parti ouvrier (-> 1965),,fr,1890,1971,done
+SNL,L'Express,Feuille d'avis de Neuchâtel,Feuille d'avis,fr,1738,2018,partial
+SNL,L'Impartial,,,fr,1881,2018,partial
+SNL,L'Essor,journal romand,,fr,1906,2018,partial
+SNL,St.Galler Zeitung,,,de,1831,1881,done
+SNL,Der Wahrheitsfreund,,1836-1843: Der St Gallische Wahrheitsfreund,de,1835,1863,done
+SNL,Neues Tagblatt aus der östlichen Schweiz,,1874: Neues Tag- und Anzeigeblatt aus der östlichen Schweiz,de,1856,1874,done
+SNL,Die Ostschweiz,,,de,1874,2018,partial
+SNL,Der Erzähler,eine politische Zeitschrift,,de,1806,1865,done
+SNL,St. Galler Volksblatt,,"1856-1860: Volksblatt für Sargans, Gaster und Seebezirk, 1860-May 1862: St. gallisches Volksblatt",de,1856,1993,partial
+SNL,Schweizerische Tag-Blätter,"enthaltend die neuesten Begebenheiten der löblichen Stände Zürich, Bern, Basel, Thurgäu und Rheinthal",,de,1798,1798,done
+SNL,Der helvetische Volksfreund,,,de,1799,1801,done
+SNL,Bote vom Untersee,Publikations-Organ für den Bezirk Steckborn und die angrenzenden Gemeinden,Title from 2004: Bote vom Untersee und Rhein,de,1900,2018,partial
+SNL,"Wochenblatt für die vier löblichen Kantone Ury, Schwytz, Unterwalden und Zug",,"1822 Neue Zuger Zeitung (I), 1823 - 1831 Zuger Zeitung, 1832 - 1849 Der freie Schweizer",de,1814,1849,done
+SNL,Neue Zuger Zeitung (II),,,de,1846,1891,done
+SNL,Zuger Volksblatt,,1861-1864 Zugerische Volksblatt,de,1861,1965,partial
+SNL,Zuger Nachrichten,Conservatives Organ des Kts. Zug – Anzeigeblatt für Stadt und Land,,de,1886,1995,partial
+SNL,Der Zugerbieter,,,de,1865,1868,done
+SNL,Walliser Bote,unabhängige Tageszeitung,"1840 Der Nachläufer, 1840-1841 Messager Valaisan, 1858-1869 Walliser Wochenblatt",de,1840,2018,partial
+SNL,Confédéré,organe libéral du Valais : organe du Parti radical-démocratique valaisan,,fr,1861,2018,partial
+SNL,Nouvelliste,feuille d'avis du Valais,"1968-1997 Nouvelliste et Feuille d'avis du Valais
+  avant: Nouvelliste du Rhône, Nouvelliste valaisan",fr,1903,2018,partial
+SNL,Feuille d’avis du Valais,,until 17.11.1952: Journal et feuille d'avis du Valais,fr,1903,1968,done
+SNL,Le Rhône,Journal valaisan indépendant du soir,,fr,1929,1960,done
+SNL,Walliser Nachrichten-Briger Anzeiger,unabhängige Volkszeitung und Anzeigenblatt für das deutschsprachige Wallis,Briger Anzeiger,de,1933,1960,ongoing
+SNL,Briger Anzeiger,Publikationsorgan für Oberwallis : unabhängige Volkszeitung und Anzeigenblatt für das deutschsprachige Wallis,,de,1899,1933,ongoing
+SNL,Walliser Volksfreund,,,de,1920,1989,ongoing
+SNL,Die Rote Anneliese,,KO-Info,de,1973,2018,ongoing
+SNL,Oberwalliserzeitung,Volkswirtschaftliches Nachrichten- und Geschäftsblatt für alle Erwerbszweige,,de,1929,1931,ongoing
+SNL,Der Oberwalliser,liberales Organ,,de,1929,1936,ongoing
+SNL,Volksfreund von Simplon,,,de,1884,1885,ongoing
+SNL,Walliser Volkszeitung,Organ der Arbeitschaft des Kantons Wallis,,de,1920,1923,ongoing
+SNL,Der Fenner,Mitteilungsblatt der Jungkonservativen Bewegung des Oberwallis,,de,1935,1941,ongoing
+SNL,Der Demokrat,Mitteilungsblatt der demokratischen Partei Visp,,de,1957,1959,ongoing
+SNL,Die Volksstimme,unabhängiges Organ für ein fortschrittliches Wallis,,de,1959,1961,ongoing
+SNL,RZ Regional Zeitung,"Anzeiger für die Agglomeration Brig-Glis, Naters, Visp und Umgebung",,de,1998,2003,ongoing
+SNL,Le Peuple Valaisan,hebdomadaire socialiste,Suite de : Le falot. Devient : Le Valaisan : hebdomadaire ouvrier et paysan,de,1927,1936,ongoing
+SNL,Le peuple valaisan,,,de,1953,2012,ongoing
+SNL,La Lutte,,,fr,1901,1905,ongoing
+SNL,Le Falot I,,,fr,1914,1919,ongoing
+SNL,Le Falot II,,,fr,1925,1927,ongoing
+SNL,Feuille d’avis de Monthey et environs,,,fr,1901,1902,ongoing
+SNL,Le Bas-Valaisan,,,fr,1904,1906,ongoing
+SNL,Le Simplon,,,fr,1906,1908,ongoing
+SNL,La Justice,,,fr,1909,1913,ongoing
+SNL,L’Avenir,,,fr,1920,1923,ongoing
+SNL,Le Valaisan,,,fr,1936,1936,ongoing
+SNL,Le défenseur de la religion et du peuple,,,fr,1939,1940,ongoing
+SNL,Gazette du Simplon I,,,fr,1942,1943,ongoing
+SNL,Gazette du Simplon II,,,fr,1944,1947,ongoing
+SNL,La Voix du Rhône,,,fr,1944,1947,ongoing
+SNL,Gazette du Valais / Nouvelle gazette du Valais,,,fr,1855,1922,ongoing
+SNL,L’ami du peuple,,,fr,1878,1922,ongoing
+SNL,Le Valais,,,fr,1922,1927,ongoing
+SNL,La Voix du Pays,,,fr,1944,1963,ongoing
+SNL,La Patrie valaisanne,,,fr,1927,1970,ongoing
+SNL,Le Travailleur,,,fr,1925,1927,ongoing
+SNL,Terre valaisanne,,,fr,1944,2012,ongoing
+SNL,Le Pilon,,,fr,1933,1934,ongoing
+SNL,Journal de Saxon,,,fr,1882,1884,ongoing
+SNL,La Contrée,,,fr,1902,1903,ongoing
+SNL,Feuille d’Avis de Martigny,,,fr,1907,1907,ongoing
+SNL,L’Indicateur-Der Anzeiger,,,fr,1914,1923,ongoing
+SNL,La Soupape,,,fr,1973,1974,ongoing
+SNL,Courrier de Sierre,,,fr,1906,1909,ongoing
+SNL,"Feuille d’avis de Sion, Savièse, et des districts de Conthey, Hérens et environs",,,fr,1924,1930,ongoing
+SNL,Echo de Sierre,,,fr,1925,1931,ongoing
+SNL,Le Courrier de Sion,,,fr,1925,1935,ongoing
+SNL,Courrier du Valais,,,fr,1935,1938,ongoing
+SNL,Le petit Valaisan,,,fr,1937,1938,ongoing
+SNL,La Tribune valaisanne,,,fr,1937,1937,ongoing
+SNL,Le Chablaisien,,,fr,1974,1992,ongoing
+SNL,L’expression,,,fr,1998,2005,ongoing
+SNL,Valais demain,,,fr,1970,1997,ongoing
+SNL,Thuner Tagblatt,"Tageszeitung für die Stadt Thun, die Region Thun und das Berner Oberland","1838-1876: Thuner Wochenblatt, 1877-1910: Täglicher Anzeiger für Thun und das Berner Oberland, 1911-1961: Tagblatt der Stadt Thun",de,1962,2018,partial
+SNL,Der Bund,,,de,1850,2018,partial
+SNL,Bieler Tagblatt,Hauptanzeigeblatt für Biel und das bernische Seeland,"Seeländer Bote, Bieler Tagblatt und Seeländer Bote",de,1850,2018,partial
+SNL,Journal du Jura,,Feuille d'avis de Bienne,fr,1871,2018,partial
+SNL,Zürcherische Freitagszeitung,,,de,1766,1914,planned
+SNL,Zürcherisches Wochenblatt,,,de,1801,1843,planned
+SNL,Chronik der Stadt Zürich,,,de,1899,1918,planned
+SNL,Neue Zürcher Nachrichten,,Zürcher Nachrichten,de,1896,1991,planned
+SNL,Eidgenössische Zeitung,,,de,1845,1864,planned
+SNL,24Heures,,Feuille d'avis de Lausanne,fr,1762,2018,partial
+SNL,Le matin,,Tribune de Lausanne,fr,1893,2018,partial
+SNL,Le Grutli,seul organe officiel et obligatoire des sections romandes du Grutli: journal ouvrier,,fr,1888,1943,done
+SNL,Le Grütléen,,,fr,1909,1917,done
+SNL,Le Droit du Peuple,"organe officiel du Parti socialiste suisse, des Partis ouvrier-socialiste vaudois et ouvrier-socialiste lausannois",,fr,1917,1940,done
+SNL,Domaine public,hebdomadaire romand,,fr,1963,1997,done
+SNL,Pour tous,,,fr,1945,1966,done
+SNL,l'Illustré,revue hebdomadaire suisse,,fr,1921,2006,done
+SNL,l'Hebdo,le magazine suisse d'information,,fr,1981,2017,partial
+SNL,Le Touriste suisse,,,fr,1866,1867,done
+SNL,La Suisse artistique,,,fr,1867,1871,done
+SNL,La Suisse illustrée,,,fr,1872,1882,done
+SNL,Pages illustrées,,,fr,1910,1916,done
+SNL,Supplément illustré hebdomadaire (Tribune de Lausanne),,,fr,1913,1918,done
+SNL,Pour la famille (Tribune de Lausanne),,,fr,1925,1931,done
+SNL,Le Magazine,,,fr,1914,1936,done
+SNL,24 Hebdo. Nord vaudois,,,fr,1776,2008,ongoing
+SNL,Le Peuple / Le Nord Vaudois 1,,,fr,1881,1933,ongoing
+SNL,Flash Revue,,Yverdon Revue,fr,1938,1994,ongoing
+SNL,La Région Nord vaudois,,,fr,2006,2018,partial
+SNL,Feuille d’avis de Sainte-Croix,,Journal du district de Grandson et Feuille d’avis de Sainte-Croix,fr,1852,1988,ongoing
+SNL,Journal de Sainte-Croix et environs,,Informations et annonces locales de Sainte-Croix et environs,fr,1988,2018,partial
+SNL,Feuille d’Avis de Vevey (I),,,fr,1778,1814,ongoing
+SNL,La Veveysanne,,,fr,1841,1843,ongoing
+SNL,La Patrie,,,fr,1841,1844,ongoing
+SNL,Vevey-Riviera,journal et feuille d'avis de Vevey,Feuille d'avis de Vevey et des cercles de la Tour-de-Peilz et de Corsier,fr,1846,1990,ongoing
+SNL,L’Observateur du Léman,,,fr,1864,1865,ongoing
+SNL,Journal de Vevey,,,fr,1865,1882,ongoing
+SNL,Le Courrier du Léman – Lavaux – Vevey,,,fr,1865,1882,ongoing
+SNL,Le Veveysan (I),,,fr,1888,1889,ongoing
+SNL,Le Journal de Vevey et des étrangers,,,fr,1888,1889,ongoing
+SNL,L’Avenir de Vevey,,,fr,1898,1900,ongoing
+SNL,La Tribune de Vevey,,,fr,1906,1907,ongoing
+SNL,Courrier de Vevey,,,fr,1907,1940,ongoing
+SNL,Journal officiel de la Ville de Vevey,,,fr,1932,1935,ongoing
+SNL,Le Veveysan (II),,,fr,1935,1941,ongoing
+SNL,Riviera magazine,"Vevey, Montreux et environs : culture et loisirs",Vevey-Hebdo : le magazine de la Riviera vaudoise,fr,1992,2013,ongoing
+SNL,Feuille d’avis de la Vallée de Joux,,"Feuille d’avis du Sentier (1870-1879), Feuille d’avis du district de la Vallée (1880?-1942)",fr,1837,2018,partial
+SNL,Revue de Lausanne / Nouvelle revue de Lausanne,,,,1868,2012,done
+SNL,Le Pays,,"Le Réveil du Jura (1860-1861), La Gazette du Jura (1862-1873), Le Pays (1874-1993)",fr,1860,1993,planned
+SNL,Le Franc-Montagnard,,,fr,1899,2018,partial
+SNL,Le Démocrate,,"Le Progrès (1866-1875), Le Dé-mocrate (1877-1993).",fr,1866,1993,planned
+SNL,Le Quotidien Jurassien,,Le Pays,fr,1993,2018,planned
+SNL,Le Jura,,,fr,1851,1970,planned
+SNL,Schaffhauser Nachrichten,Schaffhauser Intelligenzblatt,,de,1861,2018,done
+SNL,Nebelspalter,die humoristisch-satirische Schweizer Zeitschrift,,de,1875,2018,partial
+SNL,Journal de Genève (infos EPFL),,,,,,
+SNL,Gazette de Lausanne (infos EPFL),,,,,,
+SNL,Le nouveau quotidien (infos EPFL),,,,,,
+SNL,SMUV-Zeitung,,,de,1902,2004,partial
+SNL,La lutte syndicale,organe officiel de la Fédération suisse des travailleurs de la métallurgie et de l'horlogerie (FTMH),Métallurgiste,fr,1906,1998,ongoing
+SNL,Lotta sindacale,"organo ufficiale del Sindacato dell'industria, della costruzione e dei servizi FLMO",FOMO,it,1962,2004,ongoing
+SNL,Die Gewerkschaft = Il sindacato,"das Magazin der Gewerkschaft Textil, Chemie, Papier (GTPC) = Mensile del Sindacato tessili, chimica, carta","Appenzellische Weber-Zeitung, Ostschweizerische Industrie-Zeitung, Der Textilarbeiter, Der Textil- und Fabrikarbeiter, Der Textiler, Industrie-Arbeiter Textil, Chemie, Papier, Gewerkschaft Textil, Chemie, Papier",de it,1900,1992,ongoing
+SNL,"Fédération textile, chimie, papier","FTCP : organe de la Fédération du personnel du textile, de la chimie et du papier",L'ouvrier de fabrique : organe officiel de la Fédération suisse des ouvriers du textile et de fabrique,fr,1951,1979,ongoing
+SNL,VHTL-Zeitung,"Gewerkschaft Verkauf, Handel, Transport, Lebensmittel (VHTL)","Korrespondenzblatt des Verbandes der Lebens- und Genussmittelarbeiter der Schweiz, Der Proletarier, Solidarität, VHTL",de,1904,2004,ongoing
+SNL,Solidarité,"organe de Fédération suisse des ouvriers du commerce, des transports et de l'alimentation","Le prolétaire, L'alimentation, La solidarité",fr,1909,2001,ongoing
+SNL,La FCTA,"organo della Federazione svizzera dei lavatori del commercio, dei trasporti e dell'alimentazione",,it,1955,1963,ongoing
+SNL,SVEA-Nachrichten,Organ des Schweizerischen Verbandes evangelischer Arbeitnehmerinnen und Arbeitnehmer (SVEA),"SVEA-Zeitung, Evangelisch-soziale Warte",de,1920,1993,ongoing
+SNL,Der Schweizer Arbeitnehmer,offizielles Organ des Landesverbandes freier Schweizer Arbeitnehmer,"Der Schweizer Arbeiter, Die soziale Reform, Arbeiter-Post, Freie Arbeiter-Zeitung",de,1912,1996,ongoing
+SNL,Aktiv,CMV/FCOM : gemeinsames Gewerkschaftsmagazin (Ausgabe CMV/FCOM),"CMV-Zeitung, Der schweizerische Metallarbeiter",de,1930,1998,ongoing
+SNL,FCOM-info,organe officiel de la Fédération chrétienne des ouvriers sur métaux de Suisse romande,,fr,1989,1998,ongoing
+SNL,Le Courrier,le quotidien solidaire,Courrier de Genève,fr,1868,2018,partial
+SNL,La Suisse,,,fr,1898,1994,planned
+SNL,La tribune de Genève,journal quotidien,,fr,1879,2018,planned
+SNL,Revue de Genève,,,,1920,1924,planned
+SNL,Bibliothèque universelle,,,fr,1920,1930,planned
+SNL,Le fédéral,journal genevois,,fr,1832,1848,planned
+SNL,L'Europe centrale,"journal politique, scientifique et littéraire","Absorbe, puis redevient: Journal de Genève",fr,1833,1836,planned
+SNL,Le Carillon de Saint-Gervais,charivari suisse,,fr,1854,1899,planned
+SNL,Le Genevois et journal romand,organe du Parti radical genevois,"Genevois et journal politique, Le Petit Genevois",fr,1875,2010,planned
+SNL,Guguss',impressions mélancoliques et illustrées d'un messager et de son copin Polyte,"Guguss' au Nouveau Théâtre, Guguss' : journal humoristique illustré paraissant le samedi, Guguss' au Grand Théâtre, Le Petit Suisse : journal humoristique illustré , Guguss' et Petit Suisse réunis,",fr,1879,1937,planned
+SNL,Femme aujourd'hui,magazine hebdomadaire romand,"La Patrie suisse, La femme d'aujourd'hui",fr,1893,1990,planned
+SNL,Peuple de Genève,organe du Parti ouvrier socialiste et de la Fédération ouvrière de Genève,Lutte sociale et le phare,fr,1895,1917,planned
+SNL,Le pilori,,,,1923,1940,planned
+SNL,La Revue de Genève et journal suisse,,,,1842,1860,planned
+SNL,la Suisse fédérative,,"La Nation suisse, La Suisse radicale",,1860,1875,planned
+SNL,Semaine religieuse,journal évangélique protestant paraissant le samedi,La semaine religieuse de Genève,,1853,1950,planned
+SNL,Gauche Hebdo,quotidien politique et d'information : organe du Parti suisse du travail,"Voix ouvrière
+  VO réalités",,1919,2018,planned
+SNL,Chronique radicale,publié par la Jeune République,,,1873,1880,planned
+BnF,Le Journal des Débats politiques et littéraires,,,fr,1814,1944,done
+BnF,Le Matin,,,fr,1884,1944,done
+BnF,Le Petit Parisien,,,fr,1876,1944,done
+BnF,Le Petit Journal,,,fr,1863,1912,done
+BnF,Le Gaulois,,,fr,1920,1928,done
+BnF,L'Aurore,,,fr,1897,1916,done
+BnF,Le Populaire,,,fr,1918,1944,done
+BnF,Le Figaro,,,fr,1830,1926,done
+BnF,Le Temps,,,fr,1861,1942,done
+BnF,Ouest Eclair (Éd. de Caen),,,fr,1912,1944,done
+BnF,Le Petit Journal illustré Supplément du dimanche,,,fr,1884,1920,done
+BnF,Le Gaulois,,,fr,1868,1929,done
+BnF,Ouest Eclair (Éd. de Nantes),,,fr,1915,1944,done
+BnF,Ouest Eclair (Éd. de Rennes),,,fr,1899,1944,done
+BnF,L'Action Française,,,fr,1906,1910,done
+BnF,Le Constitutionnel,,,fr,1819,1914,done
+BnF,L'écho de Paris,,,fr,1884,1938,done
+BnF,Le Journal des Débats politiques et littéraires,,,fr,1881,1927,done
+BnF,Le Matin,,,fr,1884,1930,done
+BnF,Le Petit Parisien,,,fr,1882,1916,done
+BnF,Le Petit Journal,,,fr,1864,1944,done
+BnF,La Presse,,,fr,1912,1935,done
+BnF,L'Humanité,,,fr,1906,1938,done
+BnF,L'Intransigeant,,,fr,1880,1943,done
+BnF,L'Univers,,,fr,1867,1919,done
+BnF,L'Action Française,,,fr,1908,1944,done
+BnF,La Croix,,,fr,1883,1940,done
+BnF,La Presse,,,fr,1836,1922,done
+BnF,La Justice,,,fr,1880,1940,done
+BnF,La Croix,,,fr,1880,1944,done
+BnF,L'Humanité,,,fr,1904,1944,done
+BnF,Le Figaro,,,fr,1826,1942,done
+BnF,Le Temps,,,fr,1861,1942,done
+BnF,Le Siècle,,,fr,1836,1932,done
+BnF,Ouest Eclair (Éd. de Rennes),,,fr,1935,1940,done
+BnF,La Presse de la résistance (contains various titles),,,fr,1940,1944,done
+BnF,Ouest Eclair (Éd. de Caen),,,fr,1912,1944,done
+BnF,L'Echo d'Oran supplément littéraire,,,fr,1898,1899,done
+BnF,L'Etoile de l'A.E.F. journal hebdomadaire,,,fr,1928,1932,done
+BNL,Bulletin de l’ANCE,,,en fr de lb,1978,2006,done
+BNL,Luxemburger Illustrierte,,,fr de,1924,1931,done
+BNL,Floréal,,,fr de,1907,1908,done
+BNL,Das Vaterland,,,de lb,1869,1870,done
+BNL,Das Luxemburger Land,,,en fr de lb,1882,1886,done
+BNL,D'Wäschfra,,,fr de lb,1868,1884,done
+BNL,Luxemburger Wochenblatt,,,de,1821,1826,done
+BNL,A-Z,,,fr de lb,1933,1940,done
+BNL,La clef du cabinet des princes de l'Europe,,,fr,1704,1773,done
+BNL,Journal historique et littéraire,,,fr,1773,1794,done
+BNL,Journal de la ville et du Grand-Duché de Luxembourg,,,fr de,1827,1844,done
+SUBHH,Hamburger Nachrichten,,,de,1792,1833,done
+SUBHH,Altonaer Nachrichten,,,de,1850,1899,done
+SUBHH,Neue Hamburger Zeitung,,,de,1896,1922,done
+SUBHH,Hamburger Anzeiger,,,de,1888,1944,done
+SUBHH,Norddeutsche Nachrichten,,,de,1879,1943,done
+SUBHH,Börsen-Halle,,,de,1805,1833,done
+SUBHH,Hamburgischer Correspondent,,,de,1721,1835,done
+SUBHH,Hamburger Nachrichten,,,de,1933,1939,done
+SUBHH,Börsen-Halle,,,de,1838,1868,done
+SUBHH,Altonaer Nachrichten / Hamburger neueste Zeitung,,,de,1900,1941,done
+SUBHH,Börsen-Halle / ab 1905: Hamburgischer Correspondent und neue hamburgische Börsen-Halle,,,de,1839,1934,done
+SUBHH,Hamburger Nachrichten,,,de,1834,1847,done
+SUBHH,Hamburger Nachrichten,,,de,1847,1932,done
+SUBHH,Hamburger Zeitung,,,de,1943,1945,done
+SUBHH,Hamburgischer Correspondent,,,de,1836,1845,done
+SUBHH,Hamburgischer Correspondent,,,de,1846,1904,done
+KB,Traduction libre des gazettes flamandes et autres,,,fr,1677,1677,done
+KB,Nouvelles extraordinaires de divers endroits,,,fr,1696,1798,done
+KB,Gazette de Rotterdam,,,fr,1690,1714,done
+KB,Avec privilège de nos-seigneurs les Etats de Hollande et de West-Frise,,,fr,1696,1740,done
+KB,Journal d'Amsterdam,,,fr,1783,1783,done
+KB,"Nouvelles politiques, publiées à Leyde",,,fr,1798,1804,done
+KB,Courrier d'Amsterdam = Courier van Amsterdam,,,du fr,1810,1811,done
+KB,Journal du département des bouches du Rhin,,,du fr,1810,1813,done
+KB,Gazette de Frise = Vriesche courant,,,du fr,1811,1811,done
+KB,Gazette de Groningue = Groninger courant,,,du fr,1811,1811,done
+KB,Feuille politique du département du Zuiderzee = Staatkundig dagblad van het Departement der Zuiderzee,,,du fr,1811,1813,done
+KB,Feuille politique du département de l'Issel-supérieur = Staatkundig dagblad van het departement van den Boven-Ĳssel,,,du fr,1812,1813,done
+KB,"Affiches, annonces et avis divers d'Amsterdam = Advertentiën, aankondigingen en verschillende berigten van Amsterdam",,,du fr,1811,1813,done
+KB,"Feuille d'affiches, annonces et avis divers de Groningue = Advertentieblad, bekendmakingen en onderscheidene berigten van Groningen",,,du fr,1812,1813,done
+KB,Journal du département des bouches de l'Escaut = Dagblad van het departement van de Schelde,,,du fr,1811,1814,done
+KB,"Affiches, annonces et avis divers de Leyde = Advertentiën, aankondigingen en berigten van Leyden",,,du fr,1812,1813,done
+KB,Java government gazette,,,du en,1812,1816,done
+KB,Journal de la province de Limbourg,,,fr,1816,1829,done
+KB,"L'éclaireur : journal politique, commercial et littéraire de Maestricht",,,fr,1827,1829,done
+KB,L'éclaireur politique : journal de la province du Limbourg,,,fr,1829,1830,done
+KB,Journal de La Haye,,,fr,1830,1849,done
+KB,"Affiches, annonces et avis divers de Rotterdam = Advertentien, aankondigingen en berigten van Rotterdam",,,du fr,1812,1813,done
+KB,Gazette d'Amsterdam = Amsterdamsche courant,,,du fr,1811,1811,done
+KB,Gazette de Leuwarde = Leeuwarder courant,,,du fr,1811,1811,done
+KB,Gazette de Middelbourg = Middelburgsche courant,,,du fr,1811,1811,done
+KB,Gazette du département de l'Ems occidental = Courant van het departement van de Wester Eems,,,du fr,1811,1811,done
+KB,Gazette d'Utrecht = Utrechtsche courant,,,du fr,1748,1811,done
+KB,Journal du département de la Frise = Dagblad van het departement Vriesland,,,du fr,1811,1813,done
+KB,Journal historique,,,fr,1704,1712,done
+KB,Memoires qui doivent servir à la composition de la Gazette d'Amsterdam,,,fr,1671,1675,done
+KB,Moniteur d'Amsterdam = Moniteur van Amsterdam,,,du fr,1810,1810,done
+KB,Nouvelles de divers quartiers,,,fr,1714,1714,done
+KB,Suite des nouvelles d'Amsterdam,,,fr,1707,1740,done
+LFT,Alpenzeitung,,,de,1926,1943,done
+LFT,Bolletino Ufficiale Prefettura di Bolzano,,,de it,1927,1949,done
+LFT,Bollettino Ufficiale Prefettura di Trento,,,de it,1918,1926,done
+LFT,Bote für Tirol,,,de,1813,1919,done
+LFT,Bozner Nachrichten,,,de,1894,1925,done
+LFT,Bozner Zeitung,,,de,1842,1918,done
+LFT,Brixener Chronik,,,de,1888,1925,done
+LFT,Fogli Annunzi Legali Prefettura Bolzano,,,de it,1928,1949,done
+LFT,Fogli Annunzi Legali Prefettura Trento,,,de it,1919,1949,done
+LFT,Lienzer Zeitung,,,de,1886,1945,done
+LFT,Meraner Zeitung,,,de,1867,1926,done
+LFT,Pustertaler Bote,,,de,1850,1927,done
+LFT,Der Tiroler,,,de,1900,1925,done
+LFT,Tiroler Volksbote,,,de,1896,1919,done
+LFT,Volksblatt,,,de,1862,1925,done
+LFT,L'Amik di Ladins,,,de lld,1905,1905,done
+LFT,Andreas-Hofer-Wochenblatt,,,de,1878,1906,done
+LFT,Bozner Kriegsblättchen,,,de,1796,1796,done
+LFT,Bozner Tagblatt,,,de,1943,1945,done
+LFT,Der Burggräfler,,,de,1883,1926,done
+LFT,Calender de Gherdeina,,,de lld,1911,1915,done
+LFT,Dolomiten,,,de,1923,1945,done
+LFT,Dolomiten Landausgabe,,,de,1942,1943,done
+LFT,Innzeitung,,,de,1862,1866,done
+LFT,Der Ladiner,,,de lld,1908,1908,done
+LFT,Maiser Wochenblatt,,,de,1903,1915,done
+LFT,Sterzinger Bezirksanzeiger,,,de,1907,1908,done
+LFT,Südtiroler Heimat,,,de,1923,1938,done
+LFT,Der Nornenbrunnen (Insert to LFT_00028),,,de,1927,1937,done
+LFT,Land und Volk (Insert to LFT_00028),,,de,1937,1938,done
+LFT,Südtiroler Landeszeitung,,,de,1920,1922,done
+LFT,Tiroler Zeitung,,,de,1794,1794,done
+LFT,Tiroler Zeitung - Wochenblatt für Katholiken,,,de,1850,1853,done
+LFT,Der Sammler (Insert to LFT_00033),,,de,1851,1853,done
+LFT,Überetscher Gemeindeblatt,,,de,1908,1935,done
+LFT,Volksbote,,,de,1919,1941,done
+LFT,Volksrecht,,,de,1920,1923,done
+LFT,Anzeiger zum Pustertaler Boten (Insert to LFT_00012),,,de,1874,1894,done
+LFT,Beilage zum Pustertaler Boten (Insert to LFT_00012),,,de,1854,1907,done
+LFT,Der Hausfreund (Insert to LFT_00012),,,de,1879,1918,done
+LFT,"Handels-, Geschäfts-, Verkehrs- und Intelligenzblatt (Insert to LFT_00012)",,,de,1868,1871,done
+LFT,Jedem Etwas (Insert to LFT_00012),,,de,1891,1893,done
+LFT,Kleiner Gasthof- und Geschäftsanzeiger (Insert to LFT_00012),,,de,1898,1899,done
+LFT,Praktische Mitteilungen (Insert to LFT_00012),,,de,1899,1918,done
+LFT,Sonntagsblatt/ Illustriertes Sonntagsblatt (Insert to LFT_00012),,,de,1880,1917,done
+LFT,Volkswirtschaftliche Blätter (Insert to LFT_00012),,,de,1872,1883,done
+LFT,Weitere Beilagen (Insert to LFT_00012),,,de,1851,1920,done
+NLE,Revaler Bote,,,de,1919,1930,done
+NLL,Anzeiger für Goldingen und Windau,,,de,1927,1929,done
+NLL,Goldingenscher Anzeiger,,,de,1911,1930,done
+NLL,Rigasche Rundschau,,,de,1908,1920,done
+NLP,Der Deutsche in Polen,,,de,1939,1939,done
+NLP,Der Deutsche Wegweiser,,,de,1939,1939,done
+NLP,Deutsche Tageszeitung,,,de,1939,1939,done
+NLP,Freie Presse,,,de,1939,1939,done
+NLP,Kujawischer Bote,,,de,1939,1939,done
+NLP,Posener Tageblatt,,,de,1939,1939,done
+NLP,Volkszeitung,,,de,1939,1939,done
+NLP,Wochen-Post,,,de,1939,1939,done
+ONB,Wiener Zeitung,,,de,1703,1875,done
+ONB,Die Presse,,,de,1848,1875,done
+ONB,Der Humorist,,,de,1837,1862,done
+ONB,Innsbrucker Nachrichten,,,de,1854,1875,done
+ONB,Das Vaterland,,,de,1860,1875,done
+ONB,Neue Freie Presse,,,de,1864,1875,done
+ONB,Tages-Post,,,de,1865,1875,done
+ONB,Bregenzer Wochenblatt,,,de,1793,1863,done
+ONB,Klagenfurter Zeitung,,,de,1784,1875,done
+ONB,Neues Fremden-Blatt,,,de,1865,1875,done
+ONB,Militär-Zeitung,,,de,1848,1875,done
+ONB,Agramer Zeitung,,,de,1841,1875,done
+ONB,"Blätter für Musik, Theater und Kunst",,,de,1855,1873,done
+ONB,Linzer Volksblatt,,,de,1870,1875,done
+ONB,Die Debatte,,,de,1864,1869,done
+ONB,Morgen-Post,,,de,1854,1875,done
+ONB,Vaterländische Blätter für den österreichischen Kaiserstaat,,,de,1808,1820,done
+ONB,Feldkircher Wochenblatt,,,de,1809,1857,done
+ONB,Vorarlberger Landes-Zeitung,,,de,1863,1875,done
+ONB,Populäre österreichische Gesundheits-Zeitung,,,de,1830,1840,done
+ONB,Vorarlberger Volks-Blatt,,,de,1866,1875,done
+ONB,Deutsche Zeitung,,,de,1871,1875,done
+ONB,Wiener Sonntags-Zeitung,,,de,1863,1875,done
+ONB,Znaimer Wochenblatt,,,de,1855,1875,done
+ONB,Kikeriki,,,de,1861,1875,done
+ONB,Oesterreichische Buchhändler-Correspondenz,,,de,1860,1875,done
+ONB,Wiener Zeitung,,,de,1876,1945,done
+ONB,Die Presse,,,de,1876,1896,done
+ONB,Innsbrucker Nachrichten,,,de,1876,1945,done
+ONB,Das Vaterland,,,de,1876,1911,done
+ONB,Neue Freie Presse,,,de,1876,1939,done
+ONB,Tages-Post,,,de,1876,1944,done
+ONB,Militär-Zeitung,,,de,1876,1919,done
+ONB,Agramer Zeitung,,,de,1876,1912,done
+ONB,Linzer Volksblatt,,,de,1876,1945,done
+ONB,Vorarlberger Landes-Zeitung,,,de,1876,1938,done
+ONB,Vorarlberger Volksblatt,,,de,1876,1945,done
+ONB,Wiener Sonn- und Montags-Zeitung,,,de,1876,1936,done
+ONB,Znaimer Wochenblatt,,,de,1876,1945,done
+ONB,Kikeriki,,,de,1876,1933,done
+ONB,Österreichische Buchhändler-Correspondenz,,,de,1876,1945,done
+ONB,12 Uhr Blatt,,,de,1933,1934,done
+ONB,Allgemeine Automobil-Zeitung,,,de,1900,1938,done
+ONB,Allgemeine Feuerwehr-Zeitung,,,de,1879,1879,done
+ONB,Österreichische Forst-Zeitung,,,de,1883,1939,done
+ONB,Wiener Landwirtschaftliche Zeitung,,,de,1876,1943,done
+ONB,Amtliche Linzer Zeitung,,,de,1926,1945,done
+ONB,Sonder-Abdruck Amtsblatt Wien,,,de,1914,1915,done
+ONB,Anzeiger für die Bezirke Bludenz und Montafon,,,de,1885,1945,done
+ONB,Die Arbeit,,,de,1885,1886,done
+ONB,Arbeiter-Zeitung,,,de,1889,1945,done
+ONB,Arbeiterinnen Zeitung,,,de,1892,1924,done
+ONB,Armeeblatt: militär-wissenschaftliche Wochenschrift für die Interessen unserer Land- und Seemacht,,,de,1882,1919,done
+ONB,Auszug aus der Tagespresse,,,de,1917,1918,done
+ONB,Bade- und Reise-Journal,,,de,1876,1931,done
+ONB,Badener Bezirks-Blatt,,,de,1881,1896,done
+ONB,Badener Zeitung,,,de,1896,1945,done
+ONB,Der Bauernbündler,,,de,1906,1938,done
+ONB,Die Bombe,,,de,1876,1925,done
+ONB,Bregenzer Tagblatt,,,de,1889,1945,done
+ONB,Brünner Hebammen-Zeitung,,,de,1910,1918,done
+ONB,Bukowinaer Post,,,de,1893,1914,done
+ONB,Bukowinaer Rundschau,,,de,1882,1907,done
+ONB,Böhmerwald-Volksbote: sozialdemokratisches Organ für Südböhmen,,,de,1915,1917,done
+ONB,Cetinjer Zeitung,,,de,1916,1918,done
+ONB,Champagne Kriegs-Zeitung. Kriegszeitung des 8. Reservekorps.,,,de,1915,1917,done
+ONB,Freiheit!,,,de,1895,1900,done
+ONB,Christlich-soziale Arbeiter-Zeitung,,,de,1900,1934,done
+ONB,Czernowitzer Allgemeine Zeitung,,,de,1904,1918,done
+ONB,Danzers Armee-Zeitung,,,de,1899,1919,done
+ONB,Die Unzufriedene,,,de,1923,1938,done
+ONB,Feuerwehr-Signale,,,de,1883,1943,done
+ONB,Der Humorist,,,de,1880,1926,done
+ONB,Der Montag,,,de,1907,1922,done
+ONB,Die Zeit,,,de,1902,1919,done
+ONB,Deutsche Kriegszeitung von Baranowitschi,,,de,1916,1918,done
+ONB,Österreichische Verbands-Feuerwehr-Zeitung,,,de,1877,1919,done
+ONB,Deutsche Zeitung,,,de,1914,1921,done
+ONB,Deutsches Südmährerblatt,,,de,1904,1914,done
+ONB,Deutsches Volksblatt,,,de,1889,1922,done
+ONB,Österreichische Land-Zeitung,,,de,1880,1918,done
+ONB,Die Arbeit,,,de,1894,1925,done
+ONB,Dillinger's Reisezeitung: Blätter für Reise und Fremdenverkehrs-Wesen,,,de,1890,1918,done
+ONB,Volkspost,,,de,1914,1916,done
+ONB,Eggenburger Zeitung,,,de,1906,1938,done
+ONB,Die Epoche,,,de,1878,1889,done
+ONB,Extraausgaben des 1. Weltkrieges,,,de,1914,1918,done
+ONB,Wiener Montags-Journal,,,de,1905,1920,done
+ONB,Feldblatt,,,de,1914,1918,done
+ONB,Feldkircher Anzeiger,,,de,1876,1945,done
+ONB,Feldkircher Zeitung,,,de,1876,1906,done
+ONB,Figaro,,,de,1876,1919,done
+ONB,Der Floh,,,de,1876,1919,done
+ONB,Freie Pädagogische Blätter,,,de,1876,1894,done
+ONB,Freies Blatt,,,de,1892,1897,done
+ONB,Wiener Montagblatt,,,de,1911,1938,done
+ONB,Fremden-Blatt,,,de,1913,1919,done
+ONB,Salzburger Fremden-Zeitung,,,de,1888,1902,done
+ONB,Fremdenblatt,,,de,1885,1901,done
+ONB,Der Fremdenverkehr,,,de,1908,1914,done
+ONB,Der Friseur,,,de,1930,1935,done
+ONB,Grazer Mittags-Zeitung,,,de,1914,1921,done
+ONB,Grazer Vorortezeitung: Organ für die Umgebungsgemeinden von Graz,,,de,1913,1919,done
+ONB,Grazer Tagblatt,,,de,1891,1919,done
+ONB,Wiener Vororte-Zeitung,,,de,1876,1890,done
+ONB,Die Hausfrau,,,de,1877,1884,done
+ONB,Hebammen-Zeitung,,,de,1887,1919,done
+ONB,Wienerwald-Bote,,,de,1900,1943,done
+ONB,Illustrierte Wochenpost,,,de,1928,1939,done
+ONB,Illustriertes Österreichisches Journal,,,de,1906,1920,done
+ONB,Illustriertes (Österreichisches) Sportblatt,,,de,1911,1928,done
+ONB,Innviertler Heimatblatt,,,de,1938,1945,done
+ONB,Der jüdische Arbeiter,,,de,1927,1937,done
+ONB,Jüdische Korrespondenz,,,de,1915,1920,done
+ONB,Jüdische Presse,,,de,1920,1938,done
+ONB,Jüdische Volksstimme,,,de,1900,1934,done
+ONB,Das Kleine Blatt,,,de,1927,1944,done
+ONB,Österreichische Volkszeitung,,,de,1888,1918,done
+ONB,Kremser Feuerwehrzeitung,,,de,1886,1891,done
+ONB,Kriegsblatt der Palatina,,,de,1915,1915,done
+ONB,"Kriegssammler-Zeitung: Neuheiten- und Tauschanzeiger für Kriegssammler, Museen und Bibliotheken.",,,de,1916,1918,done
+ONB,Karnisch-Julische Kriegszeitung,,,de,1915,1918,done
+ONB,Kriegszeitung der 4. Armee,,,de,1914,1918,done
+ONB,Kriegszeitung des A.T.V. Graz,,,de,1914,1918,done
+ONB,Lagerzeitung für Wagna,,,de it,1915,1918,done
+ONB,Landesamtsblatt für das Burgenland,,,de,1921,1936,done
+ONB,Leitmeritzer Zeitung,,,de,1876,1895,done
+ONB,Wiener Vorstadt-Presse,,,de,1878,1888,done
+ONB,Montags-Zeitung,,,de,1878,1922,done
+ONB,Tagblatt,,,de,1916,1938,done
+ONB,Die Lyra,,,de,1882,1909,done
+ONB,Marburger Zeitung,,,de,1876,1945,done
+ONB,Marchfeldbote,,,de,1932,1934,done
+ONB,Die Muskete,,,de,1905,1941,done
+ONB,Mädchenhort,,,de,1911,1914,done
+ONB,Mährisches Tagblatt,,,de,1880,1918,done
+ONB,Nachr. d. Verbandes d. Spar- u. Darlehenskassenvereine in Vlbg.,,,de,1897,1915,done
+ONB,Nachrichten über Verwundete und Verletzte,,,de,1914,1917,done
+ONB,Neue Schlesische Zeitung,,,de,1900,1911,done
+ONB,Neue Warte am Inn,,,de,1881,1945,done
+ONB,Neue Wiener Friseur-Zeitung,,,de,1887,1943,done
+ONB,Die Neue Zeitung,,,de,1907,1934,done
+ONB,Neues 8-[Acht]-Uhr-Blatt,,,de,1914,1925,done
+ONB,Neues Wiener Journal,,,de,1893,1939,done
+ONB,Neues Wiener Tagblatt,,,de,1923,1944,done
+ONB,Neues Zentral-Organ,,,de,1906,1945,done
+ONB,(Neuigkeits) Welt Blatt,,,de,1876,1943,done
+ONB,Österreichische Badezeitung,,,de,1876,1895,done
+ONB,Die Vedette,,,de,1876,1919,done
+ONB,Österreichische Arbeiter-Zeitung,,,de,1934,1938,done
+ONB,Österreichische Buchdrucker-Zeitung,,,de,1876,1929,done
+ONB,Österreichisches Abendblatt,,,de,1933,1933,done
+ONB,Pester Lloyd,,,de,1876,1945,done
+ONB,Pilsner Tagblatt,,,de,1900,1918,done
+ONB,Prager Tagblatt,,,de,1876,1938,done
+ONB,Reichspost,,,de,1894,1938,done
+ONB,Russische Rundschau,,,de,1908,1918,done
+ONB,Salzburger Chronik,,,de,1876,1938,done
+ONB,Schuhmacher-Fachblatt,,,de,1881,1900,done
+ONB,Der Schützengraben: Feldzeitung des XIV. Reservekorps,,,de,1915,1917,done
+ONB,Sport und Salon,,,de,1900,1924,done
+ONB,Sporttagblatt,,,de,1918,1938,done
+ONB,Steyrer Zeitung,,,de,1876,1938,done
+ONB,Die Stimme,,,de,1928,1938,done
+ONB,Streffleur's Militärblatt. Feldzeitung,,,de,1915,1918,done
+ONB,Südsteirische Post,,,de,1881,1900,done
+ONB,Teplitz-Schönauer Anzeiger,,,de,1876,1945,done
+ONB,Theater an der Wien - Theaterzettel,,,de,1827,1918,done
+ONB,Theaterzettel (Oper und Burgtheater in Wien),,,de,1805,1900,done
+ONB,Tiroler Soldaten-Zeitung,,,de,1915,1917,done
+ONB,Unteroffiziers-Zeitung,,,de,1916,1917,done
+ONB,Volksblatt für Stadt und Land,,,de,1876,1933,done
+ONB,Volksbote,,,de,1897,1932,done
+ONB,Vorarlberger Wacht,,,de,1910,1938,done
+ONB,Wiener Allgemeine Zeitung,,,de,1880,1934,done
+ONB,Wiener Bilder,,,de,1896,1939,done
+ONB,Wiener Caricaturen,,,de,1881,1925,done
+ONB,Wiener Feuerwehr-Zeitung,,,de,1876,1888,done
+ONB,Wiener Mittagsblatt,,,de,1933,1933,done
+ONB,Wiener Moden- und Hauswesen-Zeitung,,,de,1881,1882,done
+ONB,Wiener Montags-Post,,,de,1893,1926,done
+ONB,Wiener neueste Nachrichten,,,de,1925,1945,done
+ONB,Wiener Presse,,,de,1882,1891,done
+ONB,Wiener Salonblatt,,,de,1876,1938,done
+ONB,Wiener Theater-Zeitung,,,de,1881,1899,done
+ONB,Wiener Woche,,,de,1933,1934,done
+ONB,Das Wort der Frau,,,de,1931,1933,done
+ONB,Der Wähler,,,de,1896,1897,done
+ONB,Zeit. d. Österr. Reichs-Verbandes f. Feuerwehr- u. Rettungswesen,,,de,1924,1938,done
+ONB,Zeitung für Landwirtschaft,,,de,1876,1903,done
+ONB,Allgemeine Österreichische Gerichtszeitung,,,de,1876,1918,done
+ONB,Acht Uhr Blatt,,,de,1933,1933,done
+ONB,Der Bautechniker,,,de,1880,1921,done
+ONB,Das interessante Blatt,,,de,1882,1939,done
+ONB,Die nationale Frau,,,de,1919,1919,done
+ONB,Der Eishockeysport,,,de,1925,1938,done
+ONB,Jörgel Briefe,,,de,1876,1931,done
+ONB,Oesterreichische Gartenlaube,,,de,1876,1883,done
+ONB,Deutsch-Österreichische tierärztliche Wochenschrift,,,de,1911,1927,done
+ONB,Wiener Illustrierte Zeitung,,,de,1914,1916,done
+ONB,Ybbser Zeitung,,,de,1912,1943,done
+ONB,Die Neuzeit,,,de,1876,1903,done
+ONB,Volksfreund,,,de,1890,1939,done
+ONB,Allgemeine land- und forstwirthschaftliche Zeitung,,,de,1851,1867,done
+ONB,Die Bombe,,,de,1871,1875,done
+ONB,Österreichische Buchdrucker-Zeitung,,,de,1873,1875,done
+ONB,Extract-Schreiben,,,de,1686,1706,done
+ONB,Feldkircher Anzeiger,,,de,1866,1875,done
+ONB,Curlisten Bad Ischl,,,de,1842,1875,done
+ONB,Figaro,,,de,1857,1875,done
+ONB,Feldkircher Zeitung,,,de,1861,1875,done
+ONB,Der Floh,,,de,1869,1875,done
+ONB,Freie Pädagogische Blätter,,,de,1867,1875,done
+ONB,Die Gartenlaube für Österreich,,,de,1866,1869,done
+ONB,Internationale Ausstellungs-Zeitung,,,de,1873,1873,done
+ONB,Janus,,,de,1818,1819,done
+ONB,Jörgel Briefe,,,de,1832,1875,done
+ONB,Leitmeritzer Zeitung,,,de,1858,1875,done
+ONB,Morgen-Post,,,de,1854,1875,done
+ONB,Die Neuzeit,,,de,1861,1875,done
+ONB,Neue Wiener Musik-Zeitung,,,de,1852,1860,done
+ONB,Österreichische Badezeitung,,,de,1872,1875,done
+ONB,Österreichische Feuerwehrzeitung,,,de,1865,1872,done
+ONB,Siebenbürgisch-Deutsches Wochenblatt,,,de,1868,1873,done
+ONB,Sonntagsblätter,,,de,1842,1848,done
+ONB,Union. Zeitschrift für Versicherungswesen und Volkswirtschaft,,,de,1863,1875,done
+ONB,Volksblatt für Stadt und Land,,,de,1870,1875,done
+ONB,Die Vedette,,,de,1869,1875,done
+ONB,Vorarlberger Zeitung,,,de,1849,1850,done
+ONB,Wiener Abendzeitung,,,de,1848,1848,done
+ONB,Wiener Feuerwehrzeitung,,,de,1871,1875,done
+ONB,Wiener Moden Zeitung,,,de,1862,1863,done
+ONB,Wiener Salonblatt,,,de,1870,1875,done
+ONB,Wiener Vororte-Zeitung,,,de,1875,1875,done
+ONB,Wr. Weltaustellungs-Zeitung / Int. Austellungs-Zeitung,,,de,1871,1875,done
+ONB,Allgemeine land- und forstwirthschaftliche Zeitung,,,de,1851,1867,done
+ONB,Allgemeine Österreichische Gerichtszeitung,,,de,1850,1875,done
+ONB,Feldkircher Anzeiger,,,de,1868,1873,done
+ONB,Freie Pädagogische Blätter,,,de,1868,1874,done
+ONB,Gerichtshalle,,,de,1857,1875,done
+ONB,Die Gartenlaube für Österreich,,,de,1868,1869,done
+ONB,Klagenfurter Zeitung,,,de,1853,1875,done
+ONB,Militär-Zeitung,,,de,1867,1867,done
+ONB,Zeitschrift für Notariat und freiwillige Gerichtsbarkeit in Österreich,,,de,1868,1875,done
+ONB,(Neuigkeits) Welt Blatt,,,de,1874,1875,done
+ONB,Österreichische Zeitschrift für Verwaltung,,,de,1868,1875,done
+ONB,Prager Abendblatt,,,de,1867,1875,done
+ONB,Teplitz-Schönauer Anzeiger,,,de,1861,1875,done
+ONB,Volksblatt für Stadt und Land,,,de,1873,1873,done
+ONB,Vorarlberger Landes-Zeitung,,,de,1871,1875,done
+ONB,Wiener Landwirtschaftliche Zeitung,,,de,1868,1869,done
+ONB,Arbeiterwille,,,de,1914,1918,done
+ONB,Curlisten Bad Ischl,,,de,1914,1918,done
+ONB,Deutsche Presse,,,de,1914,1918,done
+ONB,Drogisten Zeitung,,,de,1914,1918,done
+ONB,Der Tiroler,,,de,1914,1918,done
+ONB,Niederösterreichische Volks- und Vereinszeitung,,,de,1914,1918,done
+ONB,Österreichische Zeitschrift für Verwaltung,,,de,1914,1918,done
+ONB,Prager Abendblatt,,,de,1914,1918,done
+ONB,Die Spruchpraxis,,,de,1914,1914,done
+ONB,Allgemeiner Tiroler Anzeiger,,,de,1914,1915,done
+ONB,Landbote von Vorarlberg,,,de,1917,1918,done
+ONB,Verlustliste,,,de,1914,1916,done
+ONB,Alphabetisches Verzeichnis Verlustlisten,,,de,1914,1918,done
+ONB,Vorarlberger Volksfreund,,,de,1914,1918,done
+ONB,Wiener Neueste Nachrichten,,,de,1914,1918,done
+ONB,Znaimer Tagblatt,,,de,1914,1918,done
+ONB,Salzburger Chronik,,,de,1873,1875,done
+ONB,Salzburger Volksblatt: die unabhängige Tageszeitung für Stadt und Land Salzburg,,,de,1871,1875,done
+ONB,Fremden-Blatt,,,de,1847,1873,done
+ONB,Wiener Zeitung,,,de,1703,1807,done
+ONB,Wiener Theater-Zeitung,,,de,1806,1838,done
+ONB,Allgemeine land- und forstwirthschaftliche Zeitung,,,de,1852,1852,done
+ONB,Österreichische Buchdrucker-Zeitung,,,de,1874,1874,done
+ONB,Die Emancipation. Zeitschrift für Frauen,,,de,1875,1875,done
+ONB,Frauenblätter,,,de,1871,1872,done
+ONB,Grazer Volksblatt,,,de,1868,1875,done
+ONB,Die Gartenlaube für Österreich,,,de,1868,1869,done
+ONB,Illustrirtes Wiener Extrablatt,,,de,1872,1875,done
+ONB,Marburger Zeitung,,,de,1862,1870,done
+ONB,Nordböhmisches Volksblatt,,,de,1873,1873,done
+ONB,Neues Fremden-Blatt,,,de,1865,1875,done
+ONB,Politische Frauen-Zeitung. Sonntags-Beilage zur Tages-Presse,,,de,1869,1871,done
+ONB,Allgemeine Automobil-Zeitung,,,de,1901,1905,done
+ONB,Amtliche Nachrichten des k. k. Ministeriums des Innern,,,de,1901,1901,done
+ONB,Allgemeine Österreichische Gerichtszeitung,,,de,1901,1905,done
+ONB,Agramer Zeitung,,,de,1901,1905,done
+ONB,Arbeiterwille,,,de,1901,1905,done
+ONB,Arbeiter-Zeitung,,,de,1901,1905,done
+ONB,Anzeiger für die Bezirke Bludenz und Montafon,,,de,1901,1905,done
+ONB,Die Bombe,,,de,1901,1905,done
+ONB,Bade- und Reise-Journal,,,de,1901,1903,done
+ONB,Bregenzer/Vorarlberger Tagblatt,,,de,1901,1905,done
+ONB,Bukowinaer Post,,,de,1901,1905,done
+ONB,Bukowinaer Rundschau,,,de,1901,1905,done
+ONB,Badener Zeitung,,,de,1901,1905,done
+ONB,Christlich-soziale Arbeiter-Zeitung,,,de,1902,1905,done
+ONB,Czernowitzer Allgemeine Zeitung,,,de,1903,1905,done
+ONB,Die Arbeit,,,de,1901,1905,done
+ONB,Danzers Armee-Zeitung,,,de,1901,1905,done
+ONB,Deutsches Volksblatt,,,de,1901,1905,done
+ONB,Feldkircher Anzeiger,,,de,1901,1905,done
+ONB,Fremdenblatt,,,de,1901,1901,done
+ONB,Figaro,,,de,1901,1905,done
+ONB,Feldkircher Zeitung,,,de,1901,1905,done
+ONB,Der Floh,,,de,1901,1905,done
+ONB,Österreichische Forst-Zeitung,,,de,1901,1905,done
+ONB,Feuerwehr-Signale,,,de,1901,1905,done
+ONB,Grazer Volksblatt,,,de,1905,1905,done
+ONB,Grazer Tagblatt,,,de,1901,1905,done
+ONB,Hebammen-Zeitung,,,de,1901,1905,done
+ONB,Der Humorist,,,de,1901,1905,done
+ONB,Innsbrucker Nachrichten,,,de,1901,1905,done
+ONB,Kikeriki,,,de,1901,1905,done
+ONB,Linzer Volksblatt,,,de,1901,1905,done
+ONB,Die Lyra,,,de,1901,1905,done
+ONB,Marburger Zeitung,,,de,1901,1905,done
+ONB,Montags-Zeitung,,,de,1901,1905,done
+ONB,Die Neuzeit,,,de,1901,1903,done
+ONB,Neues Fremden-Blatt,,,de,1901,1905,done
+ONB,Neue Schlesische Zeitung,,,de,1901,1905,done
+ONB,(Neuigkeits) Welt Blatt,,,de,1901,1905,done
+ONB,Neue Warte am Inn,,,de,1901,1905,done
+ONB,Neues Wiener Journal,,,de,1901,1905,done
+ONB,Österreichische Buchhändler-Correspondenz,,,de,1901,1905,done
+ONB,Österreichische Illustrierte Zeitung,,,de,1901,1905,done
+ONB,Österreichische Land-Zeitung,,,de,1903,1905,done
+ONB,Österreichische Verbands-Feuerwehr-Zeitung,,,de,1901,1905,done
+ONB,Österreichische Zeitschrift für Verwaltung,,,de,1901,1905,done
+ONB,Prager Abendblatt,,,de,1901,1905,done
+ONB,Pettauer Anzeiger,,,de,1905,1905,done
+ONB,Pester Lloyd,,,de,1901,1905,done
+ONB,Pettauer Zeitung,,,de,1901,1904,done
+ONB,Pilsner Tagblatt,,,de,1901,1905,done
+ONB,Prager Tagblatt,,,de,1901,1905,done
+ONB,Reichspost,,,de,1901,1905,done
+ONB,Salzburger Chronik,,,de,1901,1905,done
+ONB,Die Spruchpraxis,,,de,1901,1905,done
+ONB,Deutsches Südmährerblatt,,,de,1904,1905,done
+ONB,Salzburger Volksblatt: die unabhängige Tageszeitung für Stadt und Land Salzburg,,,de,1901,1905,done
+ONB,Tages-Post,,,de,1901,1905,done
+ONB,Teplitz-Schönauer Anzeiger,,,de,1901,1905,done
+ONB,Volksblatt für Stadt und Land,,,de,1901,1905,done
+ONB,Volksbote,,,de,1901,1905,done
+ONB,Vorarlberger Landes-Zeitung,,,de,1901,1905,done
+ONB,Das Vaterland,,,de,1901,1903,done
+ONB,Vorarlberger Volks-Blatt,,,de,1901,1905,done
+ONB,Vorarlberger Volksfreund,,,de,1901,1905,done
+ONB,Nachr. d. Verbandes d. Spar- u. Darlehenskassenvereine in Vlbg.,,,de,1901,1905,done
+ONB,Wiener Caricaturen,,,de,1901,1905,done
+ONB,Wiener Landwirtschaftliche Zeitung,,,de,1901,1905,done
+ONB,Wiener Montags-Journal,,,de,1901,1905,done
+ONB,Wiener Montags-Post,,,de,1902,1905,done
+ONB,Wiener Neueste Nachrichten,,,de,1901,1905,done
+ONB,Wiener Bilder,,,de,1901,1905,done
+ONB,Wiener Zeitung,,,de,1901,1905,done
+ONB,Wiener Salonblatt,,,de,1901,1905,done
+ONB,Wiener Sonntags-Zeitung,,,de,1901,1905,done
+ONB,Wienerwald-Bote,,,de,1901,1905,done
+ONB,Die Zeit,,,de,1902,1904,done
+ONB,Zeitung für Landwirtschaft,,,de,1901,1903,done
+ONB,Znaimer Tagblatt,,,de,1901,1905,done
+ONB,Znaimer Wochenblatt,,,de,1901,1905,done
+SBB,Berliner Tageblatt,,,de,1878,1928,done
+SBB,Der Montag (Beilage Berliner Tageblatt),,,de,1878,1928,done
+SBB,Wochen-/Monatsausgabe (Beilage Berliner Tageblatt),,,de,1878,1928,done
+SBB,Weltspiegel (Beilage Berliner Tageblatt),,,de,1878,1928,done
+SBB,Berliner Börsenzeitung,,,de,1872,1930,done
+SBB,Deutsches Nachrichtenbüro,,,de,1936,1940,done
+SBB,Volkszeitung (1890-1904) /Berliner Volkszeitung (1904-1930),,,de,1890,1930,done
+SBB,Norddeutsche Allgemeine Zeitung,,,de,1879,1919,done
+BNL,L'Action féminine,,,de,1927,1940,done
+BNL,Der Arme Teufel,,,fr de,1903,1929,done
+BNL,L'avenir,,,fr de,1868,1871,done
+BNL,Bulletin de la Société des naturalistes luxembourgeois,,,de,1907,2011,done
+BNL,Bürger- und Beamten-Zeitung,,,de,1898,1916,done
+BNL,Courrier du Grand-Duché de Luxembourg,,,fr de,1844,1868,done
+BNL,De Letzeburger,,,de,1893,1909,done
+BNL,De Mitock,,,fr de lb,1937,1940,done
+BNL,Die Schmiede,,,de,1916,1919,done
+BNL,Diekircher Wochenblatt,,,de,1841,1848,done
+BNL,D'Lëtzebuerger Land,,,en fr de lb,1954,2007,ongoing
+BNL,D'Unio'n,,,lb,1944,1948,done
+BNL,Jong-Hémecht,,,de,1926,1940,done
+BNL,Komm mit mir!,,,de,1884,1884,done
+BNL,La Gazette du Grand-Duché de Luxembourg,,,fr,1878,1878,done
+BNL,Das Luxemburger Land in Wort und Bild,,,fr de,1895,1895,done
+BNL,Luxemburger Volks-Freund,,,de,1869,1876,done
+BNL,Luxemburger Wort,,,fr de lb,1848,1950,done
+BNL,Luxemburger Zeitung,,,de,1844,1845,done
+BNL,Luxemburger Zeitung = Journal de Luxembourg,,,de,1858,1859,done
+BNL,Mittheilungen aus den Vereinssitzungen,,,de,1891,1906,done
+BNL,Obermosel-Zeitung,,,de,1881,1948,done
+BNL,Ons Jongen,,,lb,1944,1951,done
+BNL,Recueil des mémoires et des travaux publiés par la Société Botanique du Grand-Duché de Luxembourg,,,fr,1874,1902,done
+BNL,Tageblatt,,,fr de lb,1913,1950,done
+BNL,L'Union,,,fr de,1860,1871,done
+BNL,Der Wächter an der Sauer,,,de,1849,1869,done
+BNL,D'Wäschfra,,,de,1868,1884,done
+SWA,Politisches Jahrbuch der Schweizerischen Eidgenossenschaft,,,de fr,1886,1917,planned
+SWA,Schweizerische Blätter für Wirtschafts- und Sozialpolitik,,,de,1893,1953,planned
+SWA,Schweizerische Handels-Zeitung : allgemeines Industrie- und Wirtschaftsblatt = Revue commerciale et financière suisse,,,de fr,1862,2018,planned
+SWA,"Das Gewerbe, Schweizerische Gewerbezeitung",,,de,1885,2018,planned
+SWA,"Schweizerische Arbeitgeber-Zeitung, Journal des associations patronales",,,de fr,1907,1914,planned
+SWA,Schweizer Frauenblatt,,,de,1922,1989,planned
+NZZ,Neue Zürcher Zeitung,,,de,1780,2017,done

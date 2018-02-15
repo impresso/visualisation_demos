@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #eee;
+}
+#main {
+  margin: 0 auto;
+  width: 1000px;
+}
+.grid line {
+  stroke: lightgrey;
+  stroke-opacity: 0.8;
+  shape-rendering: crispEdges;
+}
+.grid path {
+  stroke-width: 0;
+}
+.timeline {
+  transition: all 0.4s;
+  stroke: gray;
+  outline: 1px solid white;
+  shape-rendering: crispEdges;
+  stroke-width: 2;
+  stroke-linecap: butt;
+}
+.bottom-fixed {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+}
+.legende span {
+  padding:4px 6px;
+  border: 1px solid white;
+  color: white;
+}
+.legende {
+  padding-top: 20px;
+  opacity: 0.9;
+}
+button {
+  font-size: 100%;
+  background: #666;
+  border: 1px solid #999;
+  color: #eee;
+  border-bottom-width: 4px;
+  border-radius: 5px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  padding: 4px 8px;
+}
+button:focus {
+  transform: translateY(3px);
+  transition: transform 350ms;
+  outline: none;
+  background: #999;
+  border-bottom-width: 1px;
+}
+</style>
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <div id="main">
+    <svg width="1000" height="2500"></svg>
+  </div>
+  <div class="bottom-fixed">
+    <button id="sortAscButton">Start Date ↑</button>
+    <button id="sortDescButton">Start Date ↓</button>
+    <button id="sortEAscButton">End Date ↑</button>
+    <button id="sortEDescButton">End Date ↓</button>
+    <button id="sortTitleButton">Title ↓</button>
+    <button id="sortPartnerButton">Partner ↓</button>
+    <div class="legende">
+      Status:
+      <span style="background:#f17d80">undefined</span>
+      <span style="background:#727395">planned</span>
+      <span style="background:#68a7ac">ongoing</span>
+      <span style="background:#c4d4af">partial</span>
+      <span style="background:#6d8671">done</span>
+    </div>
+  </div>
+</body>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script>
+// create the svg
+var svg = d3.select("svg"),
+    margin = {top: 0, right: 20, bottom: 20, left: 20},
+    width = +svg.attr("width") - margin.left - margin.right,
+    height = +svg.attr("height") - margin.top - margin.bottom,
+    g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+// set x scale
+var y = d3.scaleBand()
+    .rangeRound([0, height])
+    .paddingInner(0.05)
+    .align(0.1);
+
+// set y scale
+var x = d3.scaleLinear()
+    .rangeRound([0, width]);
+
+// set the colors
+var z = d3.scaleOrdinal()
+    .range(["#f17d80", "#727395", "#68a7ac", "#c4d4af", "#6d8671"]);
+
+
+// gridlines in x axis function
+function make_x_gridlines() {
+    return d3.axisBottom(x)
+        .ticks(8)
+}
+
+// load the csv and create the chart
+d3.text('MediaSources-1.csv', function(error, raw){
+	var dsv = d3.dsvFormat(',')
+	var data = dsv.parse(raw)
+
+  if (error) throw error;
+
+  // data = data.replace(';',',');
+  var keys = data.columns.slice(1);
+  var DigitizationStatus = ["","planned","ongoing","partial","done"];
+
+
+  // console.log(keys);
+
+  //data.sort(function(a, b) { return b.total - a.total; });
+  y.domain(data.map(function(d) { return d.Title; }));
+  x.domain([1650, 2050]);
+  // z.domain(DigitizationStatus);
+
+
+  // axisBottom
+
+  g.append("g")
+      .attr("class", "axis")
+      // .attr("transform", "translate(0," + height + ")")
+      .call(d3.axisBottom(x).ticks(null, "d"))
+    .selectAll("text")
+    .attr("font-size", "18px")
+    // .attr("text-anchor", "end")
+    //.attr("alignment-baseline", "middle")
+    // .attr("transform", "rotate(-90)")
+    .attr("transform", "translate(0,5)");
+
+  // add the X gridlines
+  g.append("g")
+      .attr("class", "grid")
+      .attr("transform", "translate(0," + height + ")")
+      .call(make_x_gridlines()
+          .tickSize(-height)
+          .tickFormat("")
+      )
+
+  g.append("g")
+    .attr("class", "timelines")
+
+function update() {
+  // g.append("g")
+  var chart = d3.select(".timelines");
+
+  var binding = chart.selectAll("g")
+    .data(data, function(d) {
+                       // This function, passed as the second argument
+                       // to data(), specifies that the dorm name should
+                       // be used as the identifying key for each
+                       // element in mitPressureSurvey. Without this
+                       // function, the sorting won't work properly.
+                       // console.log('id'+d.Title+d.YearStart+d.YearEnd)
+                       var id = escape(d.Title)+d.YearStart+d.YearEnd+d.DigitizationStatus;
+                       return id;
+                     });
+
+
+  var enterG = binding
+    // .enter().append("g")
+    //  .attr("fill", function(d) { return z(d.key); })
+    // .selectAll("rect")
+    // .data(function(d) { return d; })
+    .enter().append("g")
+
+  enterG.append("line")
+    .attr("class", "timeline")
+    .style("stroke", function(d) { return z(d.DigitizationStatus); })  // colour the line
+      .attr("y1", "40")
+      .attr("x1", function(d) { return x(d.YearStart); })
+      .attr("y2", "40")
+      .attr("x2", function(d) { return x(d.YearEnd); })
+    // .on("mouseover", function() { d3.select(this).style("stroke", "#fff"); })
+    .on("mouseout", function() {
+      d3.select(this).style("opacity", "1");
+      tooltip.style("opacity", 0);
+    })
+    .on("mouseover", function(d) {
+      // console.log(d);
+      d3.select(this).style("opacity", "0.4");
+      tooltip.style("opacity", 1);
+      // tooltip.style("transform", "translateY(100px");
+
+      // var xPosition = d3.mouse(this)[0];
+      var yPosition = window.scrollY + this.getBoundingClientRect().top;
+      tooltip.style("transform", "translateY(" + yPosition + "px)");
+      tooltip.select("text.tt-partner").text(d.PartnerID);
+      tooltip.select("text.tt-title").text(d.Title);
+      tooltip.select("text.tt-date").text(d.YearStart+'-'+d.YearEnd);
+    });
+
+    binding.transition()
+      .duration(1000)
+      .delay(function(d,i){return i * 2})
+      .attr("transform", function(d, i) {
+         return "translate(0," + i * 3 + ")";
+      });
+
+}
+
+function sortAndUpdate(sortby) {
+  data.sort(function(a, b) {
+    // console.log(data)
+    if (sortby === 'dateasc') {
+      return d3.ascending(a.YearStart, b.YearStart);
+    }
+    else if (sortby === 'datedesc') {
+      return d3.descending(a.YearStart, b.YearStart);
+    }
+    if (sortby === 'dateEasc') {
+      return d3.ascending(a.YearEnd, b.YearEnd);
+    }
+    else if (sortby === 'dateEdesc') {
+      return d3.descending(a.YearEnd, b.YearEnd);
+    }
+    else if (sortby === 'title') {
+      return d3.ascending(a.Title, b.Title);
+    }
+    else if (sortby === 'partner') {
+      return d3.ascending(a.PartnerID, b.PartnerID);
+    }
+  })
+  update();
+}
+
+update();
+sortAndUpdate('dateasc');
+
+document.getElementById("sortAscButton").onclick = function() {sortAndUpdate('dateasc')}
+document.getElementById("sortDescButton").onclick = function() {sortAndUpdate('datedesc')}
+document.getElementById("sortEAscButton").onclick = function() {sortAndUpdate('dateEasc')}
+document.getElementById("sortEDescButton").onclick = function() {sortAndUpdate('dateEdesc')}
+document.getElementById("sortTitleButton").onclick = function() {sortAndUpdate('title')}
+document.getElementById("sortPartnerButton").onclick = function() {sortAndUpdate('partner')}
+
+
+
+  // axisLeft
+  //
+  // g.append("g")
+  //     .attr("class", "axis")
+  //     .call(d3.axisLeft(y))
+  //     .selectAll("text")
+  //     .attr("font-size", 6)
+  //     .attr("text-anchor", "end");
+  //
+  //
+
+
+
+
+});
+
+  // Prep the tooltip bits, initial display is hidden
+  var tooltip = svg.append("g")
+    .attr("class", "tooltip")
+    .style("opacity", "0")
+    .style("transition", "all .5s")
+
+  tooltip.append("rect")
+    .attr("width", 60)
+    .attr("height", 2)
+    .attr("x", 0)
+    .attr("y", 35)
+    .attr("fill", "Crimson")
+    .style("opacity", 0.7);
+
+  tooltip.append("text")
+    .attr("class", "tt-partner")
+    .attr("x", 15)
+    .style("text-anchor", "start")
+    .attr("fill", "#777")
+    .attr("font-size", "14px")
+    .attr("font-weight", "bold")
+    .attr("letter-spacing", "1px");
+
+
+  tooltip.append("text")
+    .attr("class", "tt-title")
+    .attr("x", 15)
+    .attr("dy", "1.2em")
+    .style("text-anchor", "start")
+    .attr("fill", "#333")
+    .attr("font-size", "22px")
+    .attr("font-weight", "normal");
+
+  tooltip.append("text")
+    .attr("class", "tt-date")
+    .attr("x", 15)
+    .attr("dy", "80px")
+    .style("text-anchor", "start")
+    .attr("fill", "#333")
+    .attr("font-size", "46px")
+    .attr("font-weight", "bold");
+
+</script>
