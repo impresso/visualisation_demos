@@ -1,29 +1,44 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
+<title>Corpus Inventory</title>
 <style>
 body {
   font-family: 'Open Sans', sans-serif;
   background: #eee;
 }
-#main {
+body {
   margin: 0 auto;
+  padding: 0;
   width: 1000px;
 }
 .grid line {
-  stroke: lightgrey;
-  stroke-opacity: 0.8;
+  stroke: gray;
+  stroke-opacity: 0.4;
   shape-rendering: crispEdges;
 }
 .grid path {
   stroke-width: 0;
 }
+.axis .tick text {
+    font-size: 0.8rem;
+    font-weight: bold;
+    kerning: 0.2em;
+    transform: translate(0,10px);
+    fill: #333;
+    /*text-anchor : end;
+    alignment-baseline : middle;*/
+}
+.axis .domain,
+.axis .tick line {
+    display:none;
+}
 .timeline {
   transition: all 0.4s;
   stroke: gray;
-  outline: 1px solid white;
+  /*outline: 1px solid white;*/
   shape-rendering: crispEdges;
   stroke-width: 2;
-  stroke-linecap: butt;
+  stroke-linecap: square;
 }
 .bottom-fixed {
   position: fixed;
@@ -40,6 +55,7 @@ body {
   opacity: 0.9;
 }
 button {
+  cursor: pointer;
   font-size: 100%;
   background: #666;
   border: 1px solid #999;
@@ -49,12 +65,17 @@ button {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   padding: 4px 8px;
+  transition: transform, background, filter 350ms;
 }
+button:hover {
+    filter: brightness(120%);
+}
+button:active,
+button.pressed,
 button:focus {
   transform: translateY(3px);
-  transition: transform 350ms;
   outline: none;
-  background: #999;
+  background: #333;
   border-bottom-width: 1px;
 }
 </style>
@@ -66,6 +87,7 @@ button:focus {
     <svg width="1000" height="2500"></svg>
   </div>
   <div class="bottom-fixed">
+      Sort: 
     <button id="sortAscButton">Start Date ↑</button>
     <button id="sortDescButton">Start Date ↓</button>
     <button id="sortEAscButton">End Date ↑</button>
@@ -107,9 +129,9 @@ var z = d3.scaleOrdinal()
 
 
 // gridlines in x axis function
-function make_x_gridlines() {
+function make_x_gridlines(tks) {
     return d3.axisBottom(x)
-        .ticks(8)
+        .ticks(tks)
 }
 
 // load the csv and create the chart
@@ -127,7 +149,7 @@ d3.text('MediaSources-1.csv', function(error, raw){
   // console.log(keys);
 
   //data.sort(function(a, b) { return b.total - a.total; });
-  y.domain(data.map(function(d) { return d.Title; }));
+  // y.domain(data.map(function(d) { return d.Title; }));
   x.domain([1650, 2050]);
   // z.domain(DigitizationStatus);
 
@@ -138,18 +160,20 @@ d3.text('MediaSources-1.csv', function(error, raw){
       .attr("class", "axis")
       // .attr("transform", "translate(0," + height + ")")
       .call(d3.axisBottom(x).ticks(null, "d"))
-    .selectAll("text")
-    .attr("font-size", "18px")
-    // .attr("text-anchor", "end")
-    //.attr("alignment-baseline", "middle")
-    // .attr("transform", "rotate(-90)")
-    .attr("transform", "translate(0,5)");
+
 
   // add the X gridlines
   g.append("g")
       .attr("class", "grid")
       .attr("transform", "translate(0," + height + ")")
-      .call(make_x_gridlines()
+      .call(make_x_gridlines(8)
+          .tickSize(-height)
+          .tickFormat("")
+        )
+  g.append("g")
+      .attr("class", "grid")
+      .attr("transform", "translate(0," + height + ")")
+      .call(make_x_gridlines(4)
           .tickSize(-height)
           .tickFormat("")
       )
@@ -184,9 +208,9 @@ function update() {
   enterG.append("line")
     .attr("class", "timeline")
     .style("stroke", function(d) { return z(d.DigitizationStatus); })  // colour the line
-      .attr("y1", "40")
+      .attr("y1", "60")
       .attr("x1", function(d) { return x(d.YearStart); })
-      .attr("y2", "40")
+      .attr("y2", "60")
       .attr("x2", function(d) { return x(d.YearEnd); })
     // .on("mouseover", function() { d3.select(this).style("stroke", "#fff"); })
     .on("mouseout", function() {
@@ -200,15 +224,16 @@ function update() {
       // tooltip.style("transform", "translateY(100px");
 
       // var xPosition = d3.mouse(this)[0];
-      var yPosition = window.scrollY + this.getBoundingClientRect().top;
+      var yPosition = window.scrollY + this.getBoundingClientRect().top + 50;
       tooltip.style("transform", "translateY(" + yPosition + "px)");
       tooltip.select("text.tt-partner").text(d.PartnerID);
       tooltip.select("text.tt-title").text(d.Title);
+      tooltip.select(".tt-line").style('fill', z(d.DigitizationStatus));
       tooltip.select("text.tt-date").text(d.YearStart+'-'+d.YearEnd);
     });
 
     binding.transition()
-      .duration(1000)
+      .duration(600)
       .delay(function(d,i){return i * 2})
       .attr("transform", function(d, i) {
          return "translate(0," + i * 3 + ")";
@@ -216,7 +241,12 @@ function update() {
 
 }
 
-function sortAndUpdate(sortby) {
+function sortAndUpdate(sortby, e) {
+
+    
+   var p = document.querySelector('button.pressed');
+   if (p != null) p.classList.remove('pressed');
+    
   data.sort(function(a, b) {
     // console.log(data)
     if (sortby === 'dateasc') {
@@ -243,13 +273,22 @@ function sortAndUpdate(sortby) {
 
 update();
 sortAndUpdate('dateasc');
+document.getElementById("sortAscButton").classList.add('pressed');
 
-document.getElementById("sortAscButton").onclick = function() {sortAndUpdate('dateasc')}
-document.getElementById("sortDescButton").onclick = function() {sortAndUpdate('datedesc')}
-document.getElementById("sortEAscButton").onclick = function() {sortAndUpdate('dateEasc')}
-document.getElementById("sortEDescButton").onclick = function() {sortAndUpdate('dateEdesc')}
-document.getElementById("sortTitleButton").onclick = function() {sortAndUpdate('title')}
-document.getElementById("sortPartnerButton").onclick = function() {sortAndUpdate('partner')}
+//document.querySelectorAll("button").onclick = function() { this.addClass('active') }
+    
+document.getElementById("sortAscButton").onclick = function(e) {
+    sortAndUpdate('dateasc'); e.target.classList.add('pressed'); }
+document.getElementById("sortDescButton").onclick = function(e) {
+    sortAndUpdate('datedesc'); e.target.classList.add('pressed');}
+document.getElementById("sortEAscButton").onclick = function(e) {
+    sortAndUpdate('dateEasc'); e.target.classList.add('pressed');}
+document.getElementById("sortEDescButton").onclick = function(e) {
+    sortAndUpdate('dateEdesc'); e.target.classList.add('pressed');}
+document.getElementById("sortTitleButton").onclick = function(e) {
+    sortAndUpdate('title'); e.target.classList.add('pressed');}
+document.getElementById("sortPartnerButton").onclick = function(e) {
+    sortAndUpdate('partner'); e.target.classList.add('pressed');}
 
 
 
@@ -276,16 +315,17 @@ document.getElementById("sortPartnerButton").onclick = function() {sortAndUpdate
     .style("transition", "all .5s")
 
   tooltip.append("rect")
-    .attr("width", 60)
-    .attr("height", 2)
+    .attr("class", "tt-line")
+    .attr("width", 100)
+    .attr("height", 3)
     .attr("x", 0)
     .attr("y", 35)
-    .attr("fill", "Crimson")
-    .style("opacity", 0.7);
+    //.attr("fill", "Crimson")
+    //.style("opacity", 0.7);
 
   tooltip.append("text")
     .attr("class", "tt-partner")
-    .attr("x", 15)
+    .attr("x", 19)
     .style("text-anchor", "start")
     .attr("fill", "#777")
     .attr("font-size", "14px")
@@ -295,7 +335,7 @@ document.getElementById("sortPartnerButton").onclick = function() {sortAndUpdate
 
   tooltip.append("text")
     .attr("class", "tt-title")
-    .attr("x", 15)
+    .attr("x", 19)
     .attr("dy", "1.2em")
     .style("text-anchor", "start")
     .attr("fill", "#333")
@@ -304,7 +344,7 @@ document.getElementById("sortPartnerButton").onclick = function() {sortAndUpdate
 
   tooltip.append("text")
     .attr("class", "tt-date")
-    .attr("x", 15)
+    .attr("x", 8)
     .attr("dy", "80px")
     .style("text-anchor", "start")
     .attr("fill", "#333")
