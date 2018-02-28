@@ -84,7 +84,9 @@ button:focus {
 </head>
 <body>
   <div id="main">
-    <svg width="1000" height="2500"></svg>
+    <svg width="1000" height="2500">
+      <path id="segments-line" />   
+    </svg>
   </div>
   <div class="bottom-fixed">
       Sort: 
@@ -113,20 +115,37 @@ var svg = d3.select("svg"),
     height = +svg.attr("height") - margin.top - margin.bottom,
     g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-// set x scale
-var y = d3.scaleBand()
-    .rangeRound([0, height])
-    .paddingInner(0.05)
-    .align(0.1);
+// set y scale
+//var y = d3.scaleBand()
+//    .rangeRound([0, height])
+//    .paddingInner(0.05)
+//    .align(0.1);
+//
+// set y scale
+var y = d3.scaleLinear()
+    .domain([0, 100])
+    .range([150, 50])
 
 // set y scale
 var x = d3.scaleLinear()
+    .domain([1650, 2050])
     .rangeRound([0, width]);
 
 // set the colors
 var z = d3.scaleOrdinal()
     .range(["#f17d80", "#727395", "#68a7ac", "#c4d4af", "#6d8671"]);
+   // .interpolate(d3.interpolateHcl); //interpolateHsl interpolateHcl interpolateRgb
 
+
+
+// set the colors
+var z2 = d3.scaleLinear()
+    .domain([0,300])
+      .interpolate(d3.interpolateHcl)
+      .range([d3.rgb("#007AFF"), d3.rgb('#FFF500')]);
+
+    
+    
 
 // gridlines in x axis function
 function make_x_gridlines(tks) {
@@ -150,7 +169,6 @@ d3.text('MediaSources-1.csv', function(error, raw){
 
   //data.sort(function(a, b) { return b.total - a.total; });
   // y.domain(data.map(function(d) { return d.Title; }));
-  x.domain([1650, 2050]);
   // z.domain(DigitizationStatus);
 
 
@@ -170,17 +188,157 @@ d3.text('MediaSources-1.csv', function(error, raw){
           .tickSize(-height)
           .tickFormat("")
         )
-  g.append("g")
-      .attr("class", "grid")
-      .attr("transform", "translate(0," + height + ")")
-      .call(make_x_gridlines(4)
-          .tickSize(-height)
-          .tickFormat("")
-      )
 
+
+  var p = [];
+  var line = d3.line()
+    .x(function(d) { return x(d.year); })
+    .y(function(d) { return y(d.per); });
+
+    
+    for(i=0;i<400;i++) {
+      
+        var year = i+1650;
+        var per = 0;
+        
+        data.forEach(function(d) {
+
+            if (d.YearStart<=year && d.YearEnd>year) {
+                per += 1;
+            }
+        });
+        
+        p[i] = {'year':year, 'per':per};
+        // p[i].per = per;
+    }
+
+  console.log(p[200]);
+
+    
+g = svg.append("g");
+var segments = g.selectAll('line')
+    .data(p)
+    .enter()
+    .append('line')
+
+var segmentAttributes = segments
+       .attr("x1", (d,i) => x( n = i>1 ? p[i-1].year : p[i].year ))
+       .attr("y1", (d,i) => y( n = i>1 ? p[i-1].per/3 : p[i].per/3 ))
+       .attr("x2", d => x(d.year))
+       .attr("y2", d => y(d.per/3))
+       .attr("stroke", d => z2(d.per))
+       .attr("stroke-width", d => (d.per > 0 ? 2.5 : 0))
+       //.attr("stroke-width", 2.5)
+        .on("mouseout", function() {
+          d3.select(this).style("opacity", "1");
+          tooltip.style("opacity", 0);
+        })
+        .on("mouseover", function(d) {
+          // console.log(d);
+          d3.select(this).style("opacity", "0.4");
+          tooltip.style("opacity", 1);
+          // tooltip.style("transform", "translateY(100px");
+
+          // var xPosition = d3.mouse(this)[0];
+          var yPosition = window.scrollY + this.getBoundingClientRect().top + 50;
+          tooltip.style("transform", "translateY(" + yPosition + "px)");
+          tooltip.select("text.tt-partner").text('');
+          tooltip.select("text.tt-title").text(d.year);
+          tooltip.select(".tt-line").style('fill', z2(d.per));
+          tooltip.select("text.tt-date").text(d.per + ' titles');
+        });
+
+
+/*
+    
+g = svg.append("g");
+    
+var circles = g.selectAll("circle")
+                          .data(p)
+                          .enter()
+                          .append("circle");    
+    
+var circleAttributes = circles
+       .attr("cx", d => x(d.year))
+       .attr("cy", d => y(d.per))
+       .attr("r", 10)
+       .attr("stroke", d => z(d.per))
+       .attr("stroke-width", 0.5)
+       .attr("fill", "none");
+
+    
+    
+var lineFunction = d3.line()
+                          .defined(d => (d.per>0))
+                          .x(d => x(d.year))
+                          .y(d => y(d.per))
+                          .curve(d3.curveBasis);
+    
+
+//The line SVG Path we draw
+var lineGraph = svg.append("path")
+                            .attr("d", lineFunction(p))
+                            .attr("stroke", "yellow")
+                            .attr("stroke-width", 4)
+                            .attr("fill", "none");
+
+g = svg.append("path");
+d3.select('g')
+  .append('line')
+  .attr({
+    x1: 0,
+    y1: 0,
+    x2: 200,
+    y2: 200,
+    stroke: '#000'
+  })
+    
+  */
+
+
+//    .append('path')
+//    .attr('d', line);    
+ 
+
+//  g.append("path")
+//      .d(p)
+//      .attr("fill", "none")
+//      .attr("stroke", "steelblue")
+//      .attr("stroke-linejoin", "round")
+//      .attr("stroke-linecap", "round")
+//      .attr("stroke-width", 1.5)
+//      .attr("d", line);
+    
+    
+//  var g2 = g.append("g")
+//
+//  var path = g2.selectAll("path")
+//      .data(segments)
+//    .enter().append("path")
+//      .attr("d", line)
+//      .style("stroke", 'green'/*function(d) { return z(d); }*/);
+    
+
+// Produce an array of two-element arrays [x, y] for each segment of values.
+//function segments() {
+//  var i = 0, n = 400, segments = new Array(n - 1);
+//  while (i < n) {
+//      segments[i] = [ p[i][0], p[i][1] ];
+//      i++;
+//  }
+//  return segments;
+//}
+//  
+  
   g.append("g")
     .attr("class", "timelines")
 
+
+
+    
+
+    
+    
 function update() {
   // g.append("g")
   var chart = d3.select(".timelines");
@@ -208,9 +366,9 @@ function update() {
   enterG.append("line")
     .attr("class", "timeline")
     .style("stroke", function(d) { return z(d.DigitizationStatus); })  // colour the line
-      .attr("y1", "60")
+      .attr("y1", "160")
       .attr("x1", function(d) { return x(d.YearStart); })
-      .attr("y2", "60")
+      .attr("y2", "160")
       .attr("x2", function(d) { return x(d.YearEnd); })
     // .on("mouseover", function() { d3.select(this).style("stroke", "#fff"); })
     .on("mouseout", function() {
