@@ -211,8 +211,8 @@ d3.text('MediaSources-1.csv', function(error, raw){
 
 
     
-g.append("g").attr("class", "titlesPerYear");
-var segments = g.selectAll('line')
+var gPer = g.append("g").attr("class", "titlesPerYear");
+var segments = gPer.selectAll('line')
     .data(p)
     .enter()
     .append('line')
