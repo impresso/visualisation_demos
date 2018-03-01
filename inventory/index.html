@@ -189,13 +189,12 @@ d3.text('MediaSources-1.csv', function(error, raw){
           .tickFormat("")
         )
 
-
+  // compute titles per year array 
   var p = [];
   var line = d3.line()
     .x(function(d) { return x(d.year); })
     .y(function(d) { return y(d.per); });
 
-    
     for(i=0;i<400;i++) {
       
         var year = i+1650;
@@ -207,15 +206,12 @@ d3.text('MediaSources-1.csv', function(error, raw){
                 per += 1;
             }
         });
-        
         p[i] = {'year':year, 'per':per};
-        // p[i].per = per;
     }
 
-  console.log(p[200]);
 
     
-g = svg.append("g");
+g.append("g").attr("class", "titlesPerYear");
 var segments = g.selectAll('line')
     .data(p)
     .enter()
@@ -249,95 +245,11 @@ var segmentAttributes = segments
         });
 
 
-/*
-    
-g = svg.append("g");
-    
-var circles = g.selectAll("circle")
-                          .data(p)
-                          .enter()
-                          .append("circle");    
-    
-var circleAttributes = circles
-       .attr("cx", d => x(d.year))
-       .attr("cy", d => y(d.per))
-       .attr("r", 10)
-       .attr("stroke", d => z(d.per))
-       .attr("stroke-width", 0.5)
-       .attr("fill", "none");
 
-    
-    
-var lineFunction = d3.line()
-                          .defined(d => (d.per>0))
-                          .x(d => x(d.year))
-                          .y(d => y(d.per))
-                          .curve(d3.curveBasis);
-    
-
-//The line SVG Path we draw
-var lineGraph = svg.append("path")
-                            .attr("d", lineFunction(p))
-                            .attr("stroke", "yellow")
-                            .attr("stroke-width", 4)
-                            .attr("fill", "none");
-
-g = svg.append("path");
-d3.select('g')
-  .append('line')
-  .attr({
-    x1: 0,
-    y1: 0,
-    x2: 200,
-    y2: 200,
-    stroke: '#000'
-  })
-    
-  */
-
-
-//    .append('path')
-//    .attr('d', line);    
- 
-
-//  g.append("path")
-//      .d(p)
-//      .attr("fill", "none")
-//      .attr("stroke", "steelblue")
-//      .attr("stroke-linejoin", "round")
-//      .attr("stroke-linecap", "round")
-//      .attr("stroke-width", 1.5)
-//      .attr("d", line);
-    
-    
-//  var g2 = g.append("g")
-//
-//  var path = g2.selectAll("path")
-//      .data(segments)
-//    .enter().append("path")
-//      .attr("d", line)
-//      .style("stroke", 'green'/*function(d) { return z(d); }*/);
-    
-
-// Produce an array of two-element arrays [x, y] for each segment of values.
-//function segments() {
-//  var i = 0, n = 400, segments = new Array(n - 1);
-//  while (i < n) {
-//      segments[i] = [ p[i][0], p[i][1] ];
-//      i++;
-//  }
-//  return segments;
-//}
-//  
-  
   g.append("g")
     .attr("class", "timelines")
 
 
-
-    
-
-    
     
 function update() {
   // g.append("g")
@@ -433,8 +345,6 @@ update();
 sortAndUpdate('dateasc');
 document.getElementById("sortAscButton").classList.add('pressed');
 
-//document.querySelectorAll("button").onclick = function() { this.addClass('active') }
-    
 document.getElementById("sortAscButton").onclick = function(e) {
     sortAndUpdate('dateasc'); e.target.classList.add('pressed'); }
 document.getElementById("sortDescButton").onclick = function(e) {
@@ -478,8 +388,6 @@ document.getElementById("sortPartnerButton").onclick = function(e) {
     .attr("height", 3)
     .attr("x", 0)
     .attr("y", 35)
-    //.attr("fill", "Crimson")
-    //.style("opacity", 0.7);
 
   tooltip.append("text")
     .attr("class", "tt-partner")
@@ -489,7 +397,6 @@ document.getElementById("sortPartnerButton").onclick = function(e) {
     .attr("font-size", "14px")
     .attr("font-weight", "bold")
     .attr("letter-spacing", "1px");
-
 
   tooltip.append("text")
     .attr("class", "tt-title")
