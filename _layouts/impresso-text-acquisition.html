@@ -1,0 +1,161 @@
+---
+layout: default
+---
+
+
+<div id='page'>
+</div>
+
+<style>
+  .region{
+    position:absolute;
+    border: 2px solid transparent;
+    transition: border-color .21s ease-in-out;
+  }
+  .region > .i{
+    font-family: monospace;
+    background: #a0a0a0;
+    color: #fff;
+    position:absolute;
+    left:-20px;
+    width: 20px;
+    text-align: center;
+    transition: background-color .21s ease-in-out;
+  }
+  .region:hover{
+    border-color: blue;
+  }
+  .region:hover > .i {
+    background-color: blue;
+
+  }
+
+  .paragraph{
+    position:absolute;
+    background: crimson;
+    width: 2px;
+    height: 2px;
+  }
+
+  .line{
+    position:absolute;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #b0b0b0;
+  }
+
+  .token{
+    font-family: monospace;
+    position:absolute;
+
+  }
+  .token:hover{
+    background: rgba(0, 255, 0, 0.5);
+  }
+
+</style>
+<script>
+  function parseQuery(queryString) {
+    var query = {};
+    var pairs = (queryString[0] === '?' ? queryString.substr(1) : queryString).split('&');
+    for (var i = 0; i < pairs.length; i++) {
+      var eq   = pairs[i].indexOf("="),
+          key = decodeURIComponent(pairs[i].substring(0,eq)),
+          value = decodeURIComponent(pairs[i].substring(eq+1, pairs[i].length) || '');
+      query[key] = value;
+      //console.log(key, value);
+        // pairs[i].replace(/\=/g, function(m) {return encodeURIComponent(m)}).split('=', 1);
+        // console.log(pair)
+        // query[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1] || '');
+    }
+    return query;
+  }
+
+  var qs = parseQuery(location.search);
+
+  if(!qs.url) {
+    //qs.url = "https://raw.githubusercontent.com/impresso/impresso-text-acquisition/master/out/GDL/1900/01/05/a/GDL-1900-01-05-a-p0002.json?token=ABIHyp0OdBZdwtY2GrFv-kXTM2ukkqsPks5appd2wA%3D%3D";
+    throw Error('please provide us with an impresso json file!!!')
+  }
+
+  console.log('jjejejejejej', qs.url)
+
+  document.addEventListener("DOMContentLoaded", function(e) {
+    var page = d3.select('#page');
+
+    d3.json(qs.url).then(function(data){
+      console.log(data);
+
+      var max_y = 0, max_x = 0;
+      // draw regions!
+      var regions = page.selectAll('.region').data(data.regions, function(d,i) {
+        return i;
+      });
+
+      var _regions = regions
+        .enter()
+          .append('div').classed('region', true)
+            .style('transform', function(d){
+              return 'translate('+ d.coords[0]+'px,'+d.coords[1]+'px)'
+            })
+            .style('width', function(d) {
+              return (d.coords[2] - d.coords[0]) + 'px';
+            })
+            .style('height', function(d){
+              return (d.coords[3] - d.coords[1]) + 'px';
+            })
+            .append('div').classed('i', true).text(function(d, i){return i})
+
+      // flatten to _lines
+      var lines = []
+      for(var i=0,l=data.regions.length;i<l;i++){
+        for(var j=0,k=data.regions[i].paragraphs.length;j<k;j++){
+          lines = lines.concat(data.regions[i].paragraphs[j].lines);
+        }
+      }
+
+      //  flatten to tokens :)
+      var tokens = []
+      for(i=0,l=lines.length;i<l;i++){
+        tokens = tokens.concat(lines[i].tokens)
+      }
+
+      // nifify
+      // var _paragraphs = _regions.selectAll('.paragraph').data(function(d, i) { return d.paragraphs; })
+      //   .enter()
+      //     .append('div').classed('paragraph', true)
+
+      var _lines = page.selectAll('.line').data(lines)
+        .enter()
+          .append('div').classed('line', true)
+            .style('transform', function(d){
+              return 'translate('+ d.coords[0]+'px,'+d.coords[1]+'px)'
+            })
+            .style('width', function(d) {
+              return (d.coords[2] - d.coords[0]) + 'px';
+            })
+            .style('height', function(d){
+              return (d.coords[3] - d.coords[1]) + 'px';
+            })
+
+      var _tokens = page.selectAll('.token').data(tokens)
+        .enter()
+          .append('div').classed('token', true)
+            .style('transform', function(d){
+              // console.log(d)
+              return 'translate('+ d.coords[0]+'px,'+d.coords[1]+'px)'
+            })
+            .style('width', function(d) {
+              return (d.coords[2] - d.coords[0]) + 'px';
+            })
+            .style('height', function(d){
+              return (d.coords[3] - d.coords[1]) + 'px';
+            })
+            .text(function(d){
+              return d.text
+            })
+
+    }).catch(function(err){
+      console.error(err);
+    })
+  })
+</script>
